@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> PHP FOREX </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <style>
+      	body{
+      		font-family: Rockwell;
+      		}
+      	kbd,p{
+      		font-size: 50px;
+
+      		}
+      	img{
+      		height: 150px;
+      		width: 140px;
+      	}
+      	a{
+      		margin-left: 20px;
+      		margin-right: 20px;
+      	}
+
+        h1 {
+            text-align: center;
+            font-size: 350%;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-info text-light">
+<br><br>
+    
+<div class="container">  
+    <h1>Currency Calculator</h1>
+    <h2>Philippine Peso Convertor</h2>
+</div>
+
+
+<div class="container">
+
+    <center>
+    <img src="https://media4.giphy.com/media/gulXBo07CiPIK57OT1/giphy.gif?cid=6c09b95282yss9ti3rcwbvya38xo7qh2ctiinr3c105m14hd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+    <br><br>
+
+<div class="col-md-12">
+    <h2>Click the buttons below to convert</h2>
+    <kbd id="amount"></kbd>
+    <h2>pesos to other currencies</h2>
+</div>
+
+<script>
+    var php = 100; // given value in peso
+    document.getElementById("amount").textContent = php; // Dynamically set the value inside <kbd>
+</script>
+
+    </center>
+
+
+    <br>
+
+    <center>     
+    <div class="col-md-12">
+        <p id="display"></p>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="var php = 100; var $dollar=58.66; document.getElementById('display'). /* displays the converted PHP to Dollars on screen*/innerHTML= '<kbd>' + php/$dollar + '</kbd>'; alert('Converting PHP to Dollar, Please Confirm') /* creates an alert that states you have converted the PHP*/;">Dollar</button>
+        <button type="button" class="btn btn-warning" onclick="var php = 100; var baht=1.69; document.getElementById('display').
+        /* displays the converted PHP to Baht on screen*/ innerHTML= '<kbd>' + php/baht + '</kbd>'; alert('Converting PHP to Baht, Please Confirm') /* creates an alert that states you have converted the PHP*/;">Baht</button>
+        <button type="button" class="btn btn-danger" onclick="var php = 100; var yen=0.37; document.getElementById('display'). 
+        /* displays the converted PHP to Yen on screen*/innerHTML= '<kbd>' + php/yen + '</kbd>'; alert('Converting PHP to Yen, Please Confirm.') /* creates an alert that states you have converted the PHP*/;">Yen</button>
+
+    </div>
+    </center>
+</div>
+
+    <br>
+
+    <center>
+    <div class="col-md-12">
+        <a href="index.html"><button class="btn btn-success btn-lg">Refresh</button></a>
+
+   	</div>
+   </center>
+
+   
+
+</body>
+</html>
